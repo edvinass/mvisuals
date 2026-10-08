@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kiss Me, Miss My Stop</title>
+    <meta name="description" content="A very serious music video about missing your train stop." />
+    <meta property="og:title" content="Kiss Me, Miss My Stop" />
+    <meta property="og:image" content="assets/cover.jpg" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛋️</text></svg>" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main id="stage">
+      <canvas id="c"></canvas>
+
+      <section id="splash">
+        <div class="bg" style="background-image: url('assets/cover.jpg')"></div>
+        <div class="card">
+          <img src="assets/cover.jpg" alt="Cover art for Kiss Me, Miss My Stop" />
+          <div class="meta">
+            <p class="kicker">A VERY SERIOUS MUSIC VIDEO</p>
+            <h1>Kiss Me,<br />Miss My Stop</h1>
+            <p class="sub">124 BPM &bull; melodic house &bull; 3:52</p>
+            <button id="start" type="button">&#9654; PLAY</button>
+            <p class="hint">Sound on. Space = play/pause, F = fullscreen, arrows = skip.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ended">
+        <div>
+          <p>THE END</p>
+          <p class="small">(we'll see how that works out)</p>
+          <button id="replay" type="button">&#8635; REPLAY</button>
+        </div>
+      </section>
+
+      <div id="bar">
+        <button id="play" type="button" aria-label="Play or pause">&#9654;</button>
+        <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek" />
+        <span id="time">0:00 / 3:52</span>
+        <button id="mute" type="button" aria-label="Mute">&#128266;</button>
+        <button id="full" type="button" aria-label="Fullscreen">&#9974;</button>
+      </div>
+    </main>
+
+    <audio id="song" src="assets/kiss-me-miss-my-stop.mp3" preload="auto" crossorigin="anonymous"></audio>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "mvisuals",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A very serious music video for 'Kiss Me, Miss My Stop'",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
