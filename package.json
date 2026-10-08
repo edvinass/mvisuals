@@ -4,6 +4,9 @@
   "private": true,
   "description": "A very serious music video for 'Kiss Me, Miss My Stop'",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "start": "node server.mjs"
   }
